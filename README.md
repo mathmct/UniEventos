@@ -36,7 +36,7 @@ unieventos/
 
 ---
 
-## Demonstração em Vídeo
+## Demonstração em Vídeo - CLIQUE PARA ASSISTIR
 
 [![Assista ao vídeo](https://img.youtube.com/vi/ztghtUDoj4U/maxresdefault.jpg)](https://youtu.be/ztghtUDoj4U)
 
