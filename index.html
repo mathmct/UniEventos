@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UniEventos - Plataforma que conecta estudantes a eventos acadêmicos com sistema de recompensas">
+    <title>UniEventos - Eventos Acadêmicos com Recompensas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="navegacao container">
+            <div class="logo">
+                <h1>🎓 UniEventos</h1>
+            </div>
+            <ul class="menu-navegacao">
+                <li><a href="index.html" class="link-ativo">Início</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="perfil.html">Meu Perfil</a></li>
+            </ul>
+            <button class="botao-primario" onclick="window.location.href='perfil.html'">Entrar</button>
+        </nav>
+    </header>
+
+    <section class="secao-hero">
+        <div class="container conteudo-hero">
+            <div class="texto-hero">
+                <h2 class="titulo-principal">Conecte-se aos Melhores Eventos Acadêmicos</h2>
+                <p class="subtitulo">Descubra palestras, workshops e seminários de diversas instituições. Participe, aprenda e ganhe recompensas!</p>
+                <div class="grupo-botoes">
+                    <button class="botao-hero" onclick="window.location.href='eventos.html'">Explorar Eventos</button>
+                    <button class="botao-secundario">Saiba Mais</button>
+                </div>
+                <div class="estatisticas">
+                    <div class="item-estatistica">
+                        <span class="numero">500+</span>
+                        <span class="label">Eventos</span>
+                    </div>
+                    <div class="item-estatistica">
+                        <span class="numero">50+</span>
+                        <span class="label">Instituições</span>
+                    </div>
+                    <div class="item-estatistica">
+                        <span class="numero">10k+</span>
+                        <span class="label">Estudantes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="imagem-hero">
+                <div class="card-flutuante card-flutuante-1">
+                    <span class="icone">🎯</span>
+                    <span>+50 pontos</span>
+                </div>
+                <div class="card-flutuante card-flutuante-2">
+                    <span class="icone">🏆</span>
+                    <span>Conquista desbloqueada</span>
+                </div>
+                <div class="card-flutuante card-flutuante-3">
+                    <span class="icone">📚</span>
+                    <span>Novo evento disponível</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-beneficios">
+        <div class="container">
+            <h2 class="titulo-secao">Por Que Usar o UniEventos?</h2>
+            <div class="grade-beneficios">
+                <div class="card-beneficio">
+                    <div class="icone-beneficio">🗓️</div>
+                    <h3>Centralização</h3>
+                    <p>Todos os eventos acadêmicos de diferentes instituições em um só lugar</p>
+                </div>
+                <div class="card-beneficio">
+                    <div class="icone-beneficio">🎁</div>
+                    <h3>Recompensas</h3>
+                    <p>Ganhe pontos e conquistas participando de eventos e engajando com a comunidade</p>
+                </div>
+                <div class="card-beneficio">
+                    <div class="icone-beneficio">💬</div>
+                    <h3>Networking</h3>
+                    <p>Conecte-se diretamente com palestrantes, professores e outros estudantes</p>
+                </div>
+                <div class="card-beneficio">
+                    <div class="icone-beneficio">🎯</div>
+                    <h3>Personalização</h3>
+                    <p>Receba recomendações de eventos baseadas nos seus interesses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-eventos-destaque">
+        <div class="container">
+            <div class="cabecalho-secao">
+                <h2 class="titulo-secao">Eventos em Destaque</h2>
+                <a href="eventos.html" class="link-ver-todos">Ver todos →</a>
+            </div>
+            <div class="grade-eventos" id="eventosDestaque">
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-cta">
+        <div class="container conteudo-cta">
+            <h2>Comece Sua Jornada Acadêmica Hoje</h2>
+            <p>Junte-se a milhares de estudantes que já estão ampliando seus conhecimentos</p>
+            <button class="botao-cta" onclick="window.location.href='eventos.html'">Começar Agora</button>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="conteudo-rodape">
+                <div class="coluna-rodape">
+                    <h3>🎓 UniEventos</h3>
+                    <p>Conectando estudantes a oportunidades de aprendizado</p>
+                </div>
+                <div class="coluna-rodape">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="perfil.html">Perfil</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-rodape">
+                    <h4>Contato</h4>
+                    <p>contato@unieventos.com.br</p>
+                    <p>@unieventos</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 UniEventos. Projeto acadêmico desenvolvido para fins educacionais.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

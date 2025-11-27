@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seu perfil e recompensas no UniEventos">
+    <title>Meu Perfil - UniEventos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="navegacao container">
+            <div class="logo">
+                <h1>🎓 UniEventos</h1>
+            </div>
+            <ul class="menu-navegacao">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="perfil.html" class="link-ativo">Meu Perfil</a></li>
+            </ul>
+            <button class="botao-primario" onclick="window.location.href='perfil.html'">Entrar</button>
+        </nav>
+    </header>
+
+    <section class="banner-pagina">
+        <div class="container">
+            <h1>Meu Perfil</h1>
+            <p>Acompanhe suas conquistas e recompensas</p>
+        </div>
+    </section>
+
+    <section class="secao-perfil">
+        <div class="container">
+            <div class="grade-perfil">
+                <div class="card-usuario">
+                    <div class="avatar-usuario">👤</div>
+                    <h2 id="nomeUsuario">Estudante Exemplo</h2>
+                    <p class="instituicao-usuario">Universidade Federal</p>
+                    <div class="nivel-usuario">
+                        <span class="badge-nivel">Nível 5</span>
+                    </div>
+                    <div class="estatisticas-usuario">
+                        <div class="estatistica">
+                            <span class="numero-stat" id="totalEventos">12</span>
+                            <span class="label-stat">Eventos</span>
+                        </div>
+                        <div class="estatistica">
+                            <span class="numero-stat" id="totalPontos">850</span>
+                            <span class="label-stat">Pontos</span>
+                        </div>
+                        <div class="estatistica">
+                            <span class="numero-stat" id="totalConquistas">8</span>
+                            <span class="label-stat">Conquistas</span>
+                        </div>
+                    </div>
+                    <div class="barra-progresso-nivel">
+                        <div class="progresso" style="width: 65%"></div>
+                    </div>
+                    <p class="texto-progresso">650/1000 XP para o próximo nível</p>
+                </div>
+
+                <div class="card-secao">
+                    <h3>🏆 Conquistas Desbloqueadas</h3>
+                    <div class="grade-conquistas">
+                        <div class="conquista conquistada">
+                            <span class="icone-conquista">🎓</span>
+                            <span class="nome-conquista">Primeiro Evento</span>
+                        </div>
+                        <div class="conquista conquistada">
+                            <span class="icone-conquista">🔥</span>
+                            <span class="nome-conquista">5 Eventos Seguidos</span>
+                        </div>
+                        <div class="conquista conquistada">
+                            <span class="icone-conquista">⭐</span>
+                            <span class="nome-conquista">Avaliador Ativo</span>
+                        </div>
+                        <div class="conquista conquistada">
+                            <span class="icone-conquista">💬</span>
+                            <span class="nome-conquista">Networker</span>
+                        </div>
+                        <div class="conquista bloqueada">
+                            <span class="icone-conquista">🏅</span>
+                            <span class="nome-conquista">Expert</span>
+                        </div>
+                        <div class="conquista bloqueada">
+                            <span class="icone-conquista">👑</span>
+                            <span class="nome-conquista">Mestre</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-secao">
+                    <h3>🎁 Recompensas Disponíveis</h3>
+                    <div class="lista-recompensas">
+                        <div class="item-recompensa">
+                            <div class="info-recompensa">
+                                <span class="nome-recompensa">Certificado Digital Premium</span>
+                                <span class="custo-recompensa">200 pontos</span>
+                            </div>
+                            <button class="botao-resgatar">Resgatar</button>
+                        </div>
+                        <div class="item-recompensa">
+                            <div class="info-recompensa">
+                                <span class="nome-recompensa">Acesso VIP a Evento Exclusivo</span>
+                                <span class="custo-recompensa">500 pontos</span>
+                            </div>
+                            <button class="botao-resgatar">Resgatar</button>
+                        </div>
+                        <div class="item-recompensa">
+                            <div class="info-recompensa">
+                                <span class="nome-recompensa">E-book de Desenvolvimento</span>
+                                <span class="custo-recompensa">150 pontos</span>
+                            </div>
+                            <button class="botao-resgatar">Resgatar</button>
+                        </div>
+                        <div class="item-recompensa bloqueada">
+                            <div class="info-recompensa">
+                                <span class="nome-recompensa">Mentoria Individual 1h</span>
+                                <span class="custo-recompensa">1000 pontos</span>
+                            </div>
+                            <button class="botao-resgatar" disabled>Bloqueado</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-secao card-eventos-inscritos">
+                    <h3>📅 Meus Próximos Eventos</h3>
+                    <div class="lista-eventos-inscritos" id="eventosInscritos">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="conteudo-rodape">
+                <div class="coluna-rodape">
+                    <h3>🎓 UniEventos</h3>
+                    <p>Conectando estudantes a oportunidades de aprendizado</p>
+                </div>
+                <div class="coluna-rodape">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="perfil.html">Perfil</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-rodape">
+                    <h4>Contato</h4>
+                    <p>contato@unieventos.com.br</p>
+                    <p>@unieventos</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 UniEventos. Projeto acadêmico desenvolvido para fins educacionais.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
