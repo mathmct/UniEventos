@@ -38,9 +38,7 @@ unieventos/
 
 ## Demonstração em Vídeo
 
-<div align="center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/ztghtUDoj4U" title="Demonstração do UniEventos" frameborder="0" allowfullscreen></iframe>
-</div>
+[![Assista ao vídeo](https://img.youtube.com/vi/ztghtUDoj4U/maxresdefault.jpg)](https://youtu.be/ztghtUDoj4U)
 
 ---
 
